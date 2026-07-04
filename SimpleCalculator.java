@@ -2,10 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-/**
- * Simple Calculator
- * Supports basic operations: +, -, *, /
- */
 public class SimpleCalculator extends JFrame implements ActionListener {
 
     private final JTextField display;
@@ -20,7 +16,7 @@ public class SimpleCalculator extends JFrame implements ActionListener {
         setLayout(new BorderLayout(5, 5));
         setResizable(false);
 
-        // Display
+    
         display = new JTextField();
         display.setFont(new Font("Arial", Font.BOLD, 26));
         display.setHorizontalAlignment(JTextField.RIGHT);
@@ -28,7 +24,7 @@ public class SimpleCalculator extends JFrame implements ActionListener {
         display.setPreferredSize(new Dimension(300, 60));
         add(display, BorderLayout.NORTH);
 
-        // Buttons
+    
         JPanel panel = new JPanel(new GridLayout(5, 4, 5, 5));
 
         String[] buttons = {
